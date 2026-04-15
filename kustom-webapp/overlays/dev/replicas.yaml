@@ -4,3 +4,8 @@ metadata:
   name: mywebapp
 spec:
   replicas: 3
+  template:
+    spec:
+      containers:
+        - name: mywebapp
+          image: myrepo/mywebapp:latest
